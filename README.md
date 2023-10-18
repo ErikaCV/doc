@@ -17,21 +17,26 @@
 In summary, OKR Genius uses AI to simplify and enhance OKR management, helping organizations better align their objectives and boost performance. Creating an account is straightforward, and you can securely access your OKRs and performance data on your user profile.
 
 ## 2. System Architecture
+We decided to use Next.js for its distinctive features:
 
+Automatic Optimization: This feature enhances both the performance and the user experience when interacting with the application.
+Server-Side Rendering (SSR): This functionality is essential for gaining benefits in SEO and ensuring fast web loading times.
+Integrated API Functions: This integration facilitates communication between the frontend and the backend without requiring additional configurations.
+Rapid Development: Thanks to tools like hot reloading, the development process becomes more efficient and agile.
 ### 2.1. Frontend
 
 The "OKR Genius" application uses Next.js as its frontend framework. The structure is based on pages representing different views in the app, such as "Home", "Profile", and "Dashboard". Next.js API functions are used to communicate with the backend.
 
-- `/pages`: All application pages or views are stored here.
-- `/components`: Contains reusable components like the navigation bar, forms, and modals.
 
 ### 2.2. Backend
 
-The backend is developed using Node.js with the Express.js framework:
+For the backend and data management, we chose MongoDB and Express.js for the following reasons:
 
-- `/routes`: All API endpoints are defined here.
-- `/middleware`: Functions that run before reaching the final endpoint controller, like authentication verification.
-- `/controllers`: Business logic for each endpoint is defined here.
+Flexible Schema (MongoDB): The absence of a fixed structure in MongoDB provides us with constant adaptability and evolution in data management.
+Horizontally Scales (MongoDB): This capability ensures that the application can grow and handle more data simply by adding more resources.
+Agile Development (Express.js): With Express.js, we can quickly set up a web server. In addition, its middleware system allows for a modular and extensible structure.
+
+With these technological choices, we aim to guarantee a robust, scalable, and efficient application to meet all the demands and needs of our users.
 
 ### 2.3. Database
 
